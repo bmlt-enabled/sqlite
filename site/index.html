@@ -276,7 +276,7 @@
                     <h2>⚡ Aggregator Custom SQL Query</h2>
                 </div>
                 <div class="section-content">
-                    <textarea id="custom-sql" class="sql-editor" placeholder="SELECT name FROM sqlite_master WHERE type='table';"></textarea>
+                    <textarea id="custom-sql" class="sql-editor" placeholder="SELECT * from `na_root_servers`;"></textarea>
                     <br><br>
                     <button class="btn" onclick="runCustomSQL()">Execute Query</button>
                     <button class="btn btn-secondary" onclick="clearSQL()">Clear</button>
@@ -558,7 +558,7 @@ LIMIT 20`
         }
 
         function insertExample() {
-            document.getElementById('custom-sql').value = `SELECT name FROM sqlite_master WHERE type='table';`;
+            document.getElementById('custom-sql').value = `SELECT * from 'na_root_servers';`;
         }
 
         function displayResults(title, sqlResult) {
