@@ -276,11 +276,7 @@
                     <h2>⚡ Aggregator Custom SQL Query</h2>
                 </div>
                 <div class="section-content">
-                    <textarea id="custom-sql" class="sql-editor" placeholder="SELECT meeting_name, location_municipality, start_time 
-FROM meetings 
-WHERE location_province = 'CA' 
-ORDER BY start_time 
-LIMIT 10;"></textarea>
+                    <textarea id="custom-sql" class="sql-editor" placeholder="SELECT name FROM sqlite_master WHERE type='table';"></textarea>
                     <br><br>
                     <button class="btn" onclick="runCustomSQL()">Execute Query</button>
                     <button class="btn btn-secondary" onclick="clearSQL()">Clear</button>
